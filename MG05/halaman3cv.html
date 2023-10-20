@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Kreatif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #072541; /* Warna latar belakang */
+            color: #5272F2; /* Warna teks */
+            text-align: center;
+        }
+
+        .cv-container {
+            display: none;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            text-align: left;
+        }
+
+        .cv h2 {
+            color: #343a40;
+        }
+
+        .cv p {
+            color: #6c757d;
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv .btn-close {
+            font-size: 1.5rem;
+            color: #6c757d;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .animated-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .animated-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mau Lihat CV Saya?</h1>
+    <p id="demo">Klik tombol berikut untuk melihat CV</p>
+    <button type="button" class="animated-button" onclick="showCV()">Lihat CV</button>
+    
+    <div class="cv-container" id="cv-container">
+        <button type="button" class="close btn-close" onclick="hideCV()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="1.jpg" alt="Foto Profil" class="profile-image">
+        <h2>Profil</h2>
+        <p>Nama: Rakha Putra Pebri Yandra</p>
+        <p>Tempat Lahir: Medan, Sumatera Utara</p>
+        <p>Umur: 19 Tahun</p>
+        <p>Alamat: Rahasia</p>
+
+        <h2>Pendidikan</h2>
+        <p>Universitas: Telkom University</p>
+        <p>Jurusan: Sistem Informasi</p>
+        <p>IPK: 4.00</p>
+
+        <h2>Keahlian</h2>
+        <p>Desain: Figma, Canva, Photoshop</p>
+        <p>Web Development: HTML, CSS, JavaScript, Bootstrap, Codeigniter, Laravel, Etc.</p>
+        <p>Lainnya: C#, Java, .NET, Etc.</p>
+
+        <h2>Pengalaman</h2>
+        <p>Belum Ada</p>
+
+        <h2>Kontak</h2>
+        <p>Linkedin: Rakha</p>
+        <p>Instagram: Rakha</p>
+        <p>Github: Rakha</p>
+    </div>
+
+    <script>
+        function showCV() {
+            var cvContainer = document.getElementById('cv-container');
+            cvContainer.style.display = 'block';
+        }
+
+        function hideCV() {
+            var cvContainer = document.getElementById('cv-container');
+            cvContainer.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
